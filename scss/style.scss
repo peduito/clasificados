@@ -1,0 +1,37 @@
+$color:naranja;
+$formtext:mediano;
+$fondo: naranja;
+h2{
+    @if ($color == naranja){
+        color: #FF8E0A;
+        }@else if ($color == negro){
+            color:black
+        }@else {
+            color: gray
+        }
+}
+@for $i from 1 through 4 {
+    h#{$i} {
+        font-size: $i * 2em;
+    }
+}
+/* FORMULARIO */
+
+label{
+    @if ($formtext == mediano){
+        font-size:1em;
+        }@else if ($formtext == pequeño){
+            font-size: small;
+        }@else {
+            font-size: xx-large;
+        }
+} 
+
+@mixin cuadrado  {
+    background-color: #FF8E0A;
+    padding-left: 30em;         
+}
+
+.contactos{
+   @include cuadrado()
+}

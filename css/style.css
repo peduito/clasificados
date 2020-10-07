@@ -1,0 +1,275 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBFBFB;
+    margin: 0px;
+}
+/* HEADER */
+.fas {
+    padding: 4px;
+}
+
+.far {
+    padding: 4px;
+}
+
+.cabecera {
+    background: #3b3b3b;
+    text-decoration: none;
+    font-size: small;
+    text-align: right;
+    padding: 6px;
+}
+
+.cabecera__texto {
+    color: white;
+    padding: 10px;
+}
+
+.cabecera a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+/* NAVBAR */
+#navbarSupportedContent .btn {
+    background: #FF8E0A;
+    border: none;
+}
+
+input:focus,
+input.form-control:focus {
+    box-shadow: none;
+    border-color: #FF8E0A;
+}
+
+/* SLIDER */
+.slider {
+    width: 100%;
+    height: 500px;
+}
+
+/* PRODUCTOS  */
+.producto p {
+    font-size: 1em;
+    margin: 0;
+    height: 0;
+    transition: 700ms;
+    overflow: hidden;
+}
+
+.producto span {
+    font-size: x-large;
+    color: #3b3b3b;
+}
+
+.producto:hover p {
+    height: 40px;
+    margin-top: 15px;
+    color: #3b3b3b;
+}
+.productos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #303030;
+    justify-content: center;
+}
+
+.producto {
+    margin: 0.5%;
+    padding: 2px;
+    text-align-last: center;
+}
+
+.producto :hover img {
+    transform: scale(1.1);
+    opacity: 60%;
+    transition: 200ms ease;
+}
+
+.producto article a {
+    text-decoration: none;
+}
+/* NOSOTROS */
+.contenedor__titulo{
+    margin-left: 50px;
+}
+.contenedor__textos{
+    padding: 50px;
+}
+.contenedor__enlace{
+    color: #303030;
+    margin: 50px;
+    
+}
+/* INFO */
+.servicios {
+    color: #303030;
+    font-size: small;
+    display: flex;
+    border: solid 1.5px #30303011;
+    margin: 30px;
+}
+
+.info {
+    padding: 10px;
+    display: flex;
+    margin-left: 7%;
+}
+
+.icono {
+    color: #FF8E0A;
+    margin: 10px;
+}
+
+/* NOSOTROS */
+.nosotros {
+    margin: 1%;
+    padding: 2%;
+}
+
+h1 {
+    margin: 1%;
+}
+
+h2 {
+    margin: 1%;
+}
+
+/* FORMULARIO */
+.formulario {
+    display: flex;
+    padding: 100px;
+}
+/* FOOTER */
+.piePagina {
+    background: linear-gradient(black, #3b3b3b);
+    padding: 15px;
+    color: #FFFFFF;
+    width: 100% !important;
+}
+
+.piePagina h3 {
+    font-size: 16px;
+}
+
+.contacto p {
+    list-style: none;
+    font-size: 12px;
+}
+
+.politica p {
+    font-size: 12px;
+}
+
+.suscripcions p {
+    font-size: 12px;
+}
+
+.suscripcions button {
+    background: #FF8E0A;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+}
+
+.suscripcions form input {
+    width: 100px;
+    height: 24px;
+}
+
+.suscripcions input {
+    border: none;
+}
+
+.redes {
+    padding-top: 1rem;
+}
+
+.fa-facebook {
+    color: #FF8E0A
+}
+
+.fa-instagram {
+    color: #FF8E0A
+}
+
+.fa-twitter {
+    color: #FF8E0A
+}
+
+.fa-pinterest {
+    color: #FF8E0A
+}
+
+.base-footer {
+    background-color: #1A1A1A;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 10px;
+}
+/* FIN FOOTER */
+/* Media query */
+@media screen and (max-width: 575.98px) {
+    .grid {
+        display: grid;
+        margin-left: auto;
+        grid-template-columns: 3fr;
+    }
+
+    .servicios {
+        display: none;
+    }
+
+    .piePagina {
+        text-align: center;
+    }
+
+    .productos {
+        justify-content: center;
+    }
+
+    .tituloPorducto {
+        text-align: center;
+    }
+
+    .tituloContacto {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .servicios {
+        display: none;
+    }
+
+    .tituloContacto {
+        text-align: center;
+    }
+
+    .tituloPorducto {
+        text-align: center;
+    }
+
+
+    @media screen and(max-width: 991.98px) {
+        .tituloContacto {
+            text-align: center;
+        }
+
+        .formulario {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and(max-width: 1199.98px) {}
